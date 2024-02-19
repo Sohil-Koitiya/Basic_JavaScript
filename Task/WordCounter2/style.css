@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 500px;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid black;
+    text-align: center;
+}
+textarea{
+    margin-top: 20px;
+}
+.buttons{
+    margin-top: 40px;
+}
+.previewbox{
+    height: 200px;
+    width: 50%;
+    border: 1px solid black;
+    margin-left: 200px;
+    margin-top: 40px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="box">
+        <input type="text" id="one"> <br> <br>
+        <input type="text" id="two"> <br> <br>
+        <button class="button" id="btn1" onclick="plus()">+</button>
+        <button class="button" id="btn2" onclick="minus()">-</button>
+        <button class="button" id="btn3" onclick="multiplication()">*</button>
+        <button class="button" id="btn4" onclick="division()">/</button>
+        <div class="output" id="output"></div>
+    </div>
+    <script>
+
+// let a = document.querySelector('#one').value;
+//let b = document.querySelector('#two').value;
+//console.log(a+b);
+
+        function plus(){
+            let a = document.querySelector('#one').value;
+            let b = document.querySelector('#two').value;
+            document.querySelector('#output').innerText = parseInt(a) + parseInt(b);
+        }
+        function minus(){
+            let a = document.querySelector('#one').value;
+            let b = document.querySelector('#two').value;
+            document.querySelector('#output').innerText = parseInt(a) - parseInt(b);
+        }
+        function multiplication(){
+            let a = document.querySelector('#one').value;
+            let b = document.querySelector('#two').value;
+            document.querySelector('#output').innerText = parseInt(a) * parseInt(b);
+        }
+        function division(){
+            let a = document.querySelector('#one').value;
+            let b = document.querySelector('#two').value;
+            document.querySelector('#output').innerText = parseInt(a) / parseInt(b);
+        }
+
+
+    </script>
+</body>
+</html>
