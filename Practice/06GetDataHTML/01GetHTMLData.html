@@ -6,59 +6,88 @@
     <title>Get HTML Data</title>
 </head>
 <body>
-    <input type="text" class="same" name="firstName" id="first" value="Anything">
-    <input type="text" class="same" name="firstName"  id="second" >
+    <h1>Get HTML Data</h1>
 
-
+    <input type="text" id="first" name="firstname" class="same" value="Hii"> <br> <br>
+    <input type="text" id="second" name="firstname" class="same" value="Hello">
 
     <script>
+        
+        // By ID
 
-        // By ID 
+        // let inputdata = document.getElementById('first');
+        // // let inputdata = document.getElementById('first').value;
 
+        // console.log(inputdata);
+        // console.log(inputdata.value);
 
-        // let inpData =  document.getElementById('first')
-        // // let inpData =  document.getElementById('first').value 
-        // console.log(inpData);
-        // console.log(inpData.value);
+        // By Class Name
 
+        // let inputdata = document.getElementsByClassName('same');
 
-        // By className 
+        // console.log(inputdata);
+        // console.log(inputdata[0].value);
+        // console.log(inputdata[1].value);
+        // console.log(inputdata[0].id);
+        // console.log(inputdata[1].id);
+        // console.log(inputdata[0].type);
+        // console.log(inputdata[1].type);
 
+        // By Tag Name
 
-        // let inpData =  document.getElementsByClassName('same')
-        // console.log(inpData);
-        // console.log(inpData[0].value);
+        // let inputdata = document.getElementsByTagName('input');
 
+        // console.log(inputdata);
+        // console.log(inputdata[0].value);
+        // console.log(inputdata[1].value);
+        // console.log(inputdata[0].id);
+        // console.log(inputdata[1].id);
+        // console.log(inputdata[0].type);
+        // console.log(inputdata[1].type);
 
-        // By Tag Name 
+        // By Name
 
+        // let inputdata = document.getElementsByName('firstname');
 
-        // let inpData =  document.getElementsByTagName('input')
-        // console.log(inpData);
-        // console.log(inpData[0].value);
+        // console.log(inputdata);
+        // console.log(inputdata[0].value);
+        // console.log(inputdata[1].value);
+        // console.log(inputdata[0].name);
+        // console.log(inputdata[1].name);
+        // console.log(inputdata[0].id);
+        // console.log(inputdata[1].id);
+        // console.log(inputdata[0].type);
+        // console.log(inputdata[1].type);
 
+        // By Query Selector | Query Selector has only one option you can only access first element in HTML. 
 
-        // By Name 
+        // let inputdata = document.querySelector('.same');
 
-        // let inpData =  document.getElementsByName('firstName')
-        // console.log(inpData);
-        // console.log(inpData[0].value);
+        // console.log(inputdata);
+        // // console.log(inputdata[0].value);
+        // // console.log(inputdata[1].value);
+        // console.log(inputdata.value);
+        // console.log(inputdata.classList);
 
+        // By Query Selector All | Query Selector All has worked same as .getElement worked You can access all data.
 
-        // By QuerySelector 
+        // let inputdata = document.querySelectorAll('.same');
 
+        // console.log(inputdata);
+        // console.log(inputdata[0].value);
+        // console.log(inputdata[1].value);
+        // console.log(inputdata[0].id);
+        // console.log(inputdata[1].id);
+        // console.log(inputdata[0].name);
+        // console.log(inputdata[1].name);
+        // console.log(inputdata[0].type);
+        // console.log(inputdata[1].type);
+        // console.log(inputdata[0].className);
+        // console.log(inputdata[1].className);
+        // console.log(inputdata[0].classList);
+        // console.log(inputdata[1].classList);
 
-        // let inpData = document.querySelector('.same')
-        // console.log(inpData);
-        // console.log(inpData.value);
-
-
-        // By QuerySelector 
-
-
-        // let inpData = document.querySelectorAll('.same')
-        // console.log(inpData);
-        // console.log(inpData[0].value);
     </script>
+
 </body>
 </html>

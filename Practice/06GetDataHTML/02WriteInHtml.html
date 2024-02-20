@@ -4,28 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Write In HTML</title>
-<style>
-    #box{
-        border: 3px solid lime;
-        background-color: crimson;
-        color: aliceblue;
-        font-size: 30px;
-    }
-</style>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+        #box{
+            border: 3px solid lime;
+            background-color: crimson;
+            color: aliceblue;
+            font-size: 30px;
+        }
+    </style>
+
 </head>
 <body>
+    <h1>Write In HTML</h1>
+
     <div id="box"></div>
 
-    
-
-
     <script>
-        console.log('Namaste Bharat in Console');
-        document.write('Namaste Bharat in Console');
 
-        // document.getElementById('box').innerHTML = '<b>Namaste Bharat In InnerHTML</b>'
-        document.getElementById('box').innerText = '<b>Namaste Bharat In InnerHTML</b>'
-        // document.getElementById('box').innerText = 'Namaste Bharat In InnerHTML'
+        console.log('Hello, Good Morning!');
+        document.write('Hello, Good Morning!');
+
+        // document.getElementById('box').innerHTML = '<b> Hello, Good Morning! </b>'
+        document.getElementById('box').innerText = '<b> Hello, Good Morning! </b>'
+        // document.getElementById('box').innerText = 'Hello, Good Morning!'
+
+        // .innerHTML se bhale hi aapne text ko bold tag me likha he string me but pura ka pura text nahi dikhayega
+        // wo aapko b tag ki vajah se bold karke text dikhayega.
+
+        // .innerText se aapne tag me jo kuch bhi likha he exactly wo hi aapko as a result milega.
+
     </script>
+
+
 </body>
 </html>
