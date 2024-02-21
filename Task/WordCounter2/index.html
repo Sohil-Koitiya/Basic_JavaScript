@@ -9,49 +9,50 @@
 </head>
 <body>
     <div class="container">
-        <textarea name="" id="text" cols="100" rows="10" value="Hello"></textarea> <br>
+        <input type="text" name="text" id="input1"> <br>
         <div class="buttons">
-            <button id="upper" onclick="upper">Upper Case</button>
-            <button id="lower" onclick="lower">Lower Case</button>
-            <button id="space" onclick="space">Space Remove</button>
-            <button id="replace" onclick="replace">Replace</button>
-            <button id="clear" onclick="clear">Clear</button>
-            <button id="wordcount" onclick="wordcount">Word Count</button>
-            <button id="lettercount" onclick="lettercount">Letter Count</button>
+            <button id="upper" onclick="upper()">Upper Case</button>
+            <button id="lower" onclick="lower()">Lower Case</button>
+            <button id="space" onclick="space()">Space Remove</button>
+            <button id="replace" onclick="replace()">Replace</button>
+            <button id="clear" onclick="clear()">Clear</button>
+            <button id="wordcount" onclick="wordcount()">Word Count</button>
+            <button id="lettercount" onclick="lettercount()">Letter Count</button>
         </div>
         <div class="previewbox" id="previewbox"></div>
         <script>
             
-            let a = document.querySelector('#text').value;
-            console.log(a);
 
             function upper(){
-                upper.a;
-                console.log(a);
+                let a = document.getElementById('input1').value;
+                // a = a.toString();
+                // a = a.toUpperCase();
+                document.getElementById('previewbox').innerText = a.toUpperCase();
+                // console.log(a);
             }
             function lower(){
-                lower.a;
-                console.log(a);
+                let a = document.getElementById('input1').value;
+                document.getElementById('previewbox').innerText = a.toLowerCase();
             }
             function space(){
-                space.a;
-                console.log(a);
+                let a = document.getElementById('input1').value;
+                document.getElementById('previewbox').innerText = a.trim();
             }
             function replace(){
-                replace.a;
-                console.log(a);
+                let a = document.getElementById('input1').value;
+                document.getElementById('previewbox').innerText = a.replace('hello', 'hi');
             }
             function clear(){
-                clear.a;
-                console.log(a);
+                let a = document.getElementById('input1').value;
+                document.getElementById('previewbox').innerText = a.replace('hello','');
             }
             function wordcount(){
-                wordcount.a;
-                console.log(a);
+                let a = document.getElementById('input1').value;
+                document.getElementById('previewbox').innerText = a.toUpperCase();
             }
             function lettercount(){
-                lettercount.a;
-                console.log(a);
+                let a = document.getElementById('input1').value;
+                document.getElementById('previewbox').innerText = a.length;
             }
 
             

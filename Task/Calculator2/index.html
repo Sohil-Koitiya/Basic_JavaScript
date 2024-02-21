@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator 2</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .container{
+            height: 300px;
+            width: 200px;
+            border: 2px solid black;
+            margin: 20px auto;
+            border-radius: 20px;
+            padding: 18px 10px;
+            background-color: rgba(160, 28, 236, 0.603);
+        }
+        .result, input{
+            font-size: 20px;
+            height: 50px;
+            width: 175px;
+            border-radius: 10px;
+            border: none;
+            background-color: #f8f8f8;
+            font-weight: 600;
+            text-align: center;
+        }
+        button{
+            font-size: 20px;
+            padding: 5px 12px;
+            margin-top: 20px;
+            margin-left: 4px;
+        }
+        .result{
+            margin-top: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="first" name=""> <br> <br>
+        <input type="text" id="second" name="">
+
+        <button onclick="plus()">+</button>
+        <button onclick="minus()">-</button>
+        <button onclick="division()">/</button>
+        <button onclick="multiplication()">*</button>
+
+        <div class="result"></div>
+    </div>
+
+    <script>
+
+        function plus() {
+            let a = document.getElementById('first').value;
+            let b = document.getElementById('second').value;
+            document.querySelector('.result').innerText = parseInt(a) + parseInt(b)   
+        }
+
+        function minus() {
+            let a = document.getElementById('first').value;
+            let b = document.getElementById('second').value;
+            document.querySelector('.result').innerText = parseInt(a) - parseInt(b)   
+        }
+
+        function division() {
+            let a = document.getElementById('first').value;
+            let b = document.getElementById('second').value;
+            document.querySelector('.result').innerText = parseInt(a) / parseInt(b)   
+        }
+
+
+        function multiplication() {
+            let a = document.getElementById('first').value;
+            let b = document.getElementById('second').value;
+            document.querySelector('.result').innerText = parseInt(a) * parseInt(b)   
+        }
+
+    </script>
+
+</body>
+</html>

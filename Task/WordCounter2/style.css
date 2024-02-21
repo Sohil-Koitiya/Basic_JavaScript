@@ -11,9 +11,12 @@
     border: 2px solid black;
     text-align: center;
 }
-textarea{
+#input1{
     margin-top: 20px;
     width: 60%;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
 }
 .buttons{
     margin-top: 40px;
@@ -24,4 +27,8 @@ textarea{
     border: 1px solid black;
     margin-left: 200px;
     margin-top: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
