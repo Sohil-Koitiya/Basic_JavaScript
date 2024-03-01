@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+</head>
+<body>
+    <input type="text" class="hii" name="hi">
+    <input type="text" name="hi" class="hii">
+    <input type="text" name="hi" class="hii" onblur="hi()">
+    <script>
+        
+            function hi()
+            {
+
+               let a =  document.querySelectorAll('.hii')
+                
+               console.log(a[0].value);
+               console.log(a[1].value);
+               console.log(a[2].value);
+                
+            }
+
+           
+        
+
+    </script>
+</body>
+</html>
