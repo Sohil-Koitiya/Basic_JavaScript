@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h1>Form Validation</h1>
+
+    <input type="text" id="uname" onblur="userNameValidation()">
+    <span id="error"></span>
+    <br>
+    <br>
+    <input type="password" id="upass">
+    <br>
+    <br>
+    <input type="email" id="uemail">
+    <br>
+    <br>
+    <input type="number" id="phonenumber">
+    <br>
+    <br>
+    <button>SUBMIT</button>
+
+    <script>
+        function userNameValidation() {
+
+            let unameData = document.getElementById('uname');
+
+            if (unameData.value == "") {
+                console.log('Empty');
+                document.getElementById('error').innerText = 'Empty';
+                document.getElementById('error').style.color = 'red';
+            } else {
+                console.log('Some Thing is Here!');
+                console.log(unameData.value);
+            }
+        }
+    </script>
+
+</body>
+</html>
