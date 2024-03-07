@@ -8,84 +8,41 @@
 <body>
     <h1>Form Validation 3</h1>
 
-    <input type="text" id="uname" onblur="userNameValidation()">
-    <span id="error"></span>
+    <input type="text" id="uname" onblur="formValidation(this, 'error1', 'User Name')">
+    <span id="error1"></span>
     <br>
     <br>
-    <input type="password" id="upass" onblur="passwordValidation()">
-    <span id="passError"></span>
+    <input type="password" id="upass" onblur="formValidation(this, 'error2', 'User Password')">
+    <span id="error2"></span>
     <br>
     <br>
-    <input type="email" id="uemail" onblur="emailValidation()">
-    <span id="emailError"></span>
+    <input type="email" id="uemail" onblur="formValidation(this, 'error3', 'User Email')">
+    <span id="error3"></span>
     <br>
     <br>
-    <input type="text" id="phonenumber" onblur="numberValidation()">
-    <span id="numberError"></span>
+    <input type="tel" id="phonenumber" onblur="formValidation(this, 'error4', 'User Number')">
+    <span id="error4"></span>
     <br>
     <br>
     <button>SUBMIT</button>
 
     <script>
-        function userNameValidation() {
+        function formValidation(a, frank, msg) {
 
-            let unameData = document.getElementById('uname');
+            console.log(a);
+            console.log(a.value);
+            console.log(frank);
 
-            if (unameData.value == "") {
-                console.log('Please Enter User Name');
-                document.getElementById('error').innerText = 'Please Enter User Name';
-                document.getElementById('error').style.color = 'red';
+            if (a.value == "") {
+                console.log('Empty');
+                document.getElementById(frank).innerText = "Enter Valid " + msg;
+                document.getElementById(frank).style.color = 'red';
             } else {
-                // console.log('Some Thing is Here!');
-                console.log(unameData.value);
+                console.log('Some Thing is Here!');
+                console.log(a.value);
+                document.getElementById(frank).innerText = "";
             }
         }
-
-        function passwordValidation() {
-
-            let upassData = document.getElementById('upass');
-            
-            if (upassData.value == "") {
-                alert('Please Enter Password');
-                document.getElementById('passError').innerText = 'Please Enter Password';
-                document.getElementById('passError').style.color = 'red';
-            } else {
-                // console.log('Some Thing is Here!');
-                console.log(upassData.value);
-            }
-
-        }
-
-        function emailValidation() {
-
-            let uemailData = document.getElementById('uemail');
-            
-            if (uemailData.value == "") {
-                console.log('Please Enter Valid Email Address');
-                document.getElementById('emailError').innerText = 'Please Enter Valid Email Address';
-                document.getElementById('emailError').style.color = 'red';
-            } else {
-                // console.log('Some Thing is Here!');
-                console.log(uemailData.value);
-            }
-
-        }
-
-        function numberValidation() {
-
-            let phonenumberData = document.getElementById('phonenumber');
-            
-            if (phonenumberData.value == "") {
-                console.log('Please Enter Valid Number');
-                document.getElementById('numberError').innerText = 'Please Enter Valid Number';
-                document.getElementById('numberError').style.color = 'red';
-            } else {
-                // console.log('Some Thing is Here!');
-                console.log(phonenumberData.value);
-            }
-
-        }
-
 
         
     </script>
